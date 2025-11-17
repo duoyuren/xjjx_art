@@ -109,48 +109,7 @@ appropriate version for your OS and architecture.</p>
 <h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
 <p>Hugo has its own example site which happens to also be the documentation site
 you are reading right now.</p>
-<p>Follow the following steps:</p>
-<ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">Hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to http://localhost:1313</li>
-</ol>
-<p>Corresponding pseudo commands:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">    git clone https://github.com/spf13/hugo
-</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="nb">cd</span> hugo
-</span></span><span class="line"><span class="ln">3</span><span class="cl">    /path/to/where/you/installed/hugo server --source<span class="o">=</span>./docs
-</span></span><span class="line"><span class="ln">4</span><span class="cl">    &gt; <span class="m">29</span> pages created
-</span></span><span class="line"><span class="ln">5</span><span class="cl">    &gt; <span class="m">0</span> tags index created
-</span></span><span class="line"><span class="ln">6</span><span class="cl">    &gt; in <span class="m">27</span> ms
-</span></span><span class="line"><span class="ln">7</span><span class="cl">    &gt; Web Server is available at http://localhost:1313
-</span></span><span class="line"><span class="ln">8</span><span class="cl">    &gt; Press ctrl+c to stop
-</span></span></code></pre></div><p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-<p>Stop the Hugo process by hitting Ctrl+C.</p>
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">    /path/to/hugo/from/step/1/hugo server --source<span class="o">=</span>./docs --watch
-</span></span><span class="line"><span class="ln">2</span><span class="cl">    &gt; <span class="m">29</span> pages created
-</span></span><span class="line"><span class="ln">3</span><span class="cl">    &gt; <span class="m">0</span> tags index created
-</span></span><span class="line"><span class="ln">4</span><span class="cl">    &gt; in <span class="m">27</span> ms
-</span></span><span class="line"><span class="ln">5</span><span class="cl">    &gt; Web Server is available at http://localhost:1313
-</span></span><span class="line"><span class="ln">6</span><span class="cl">    &gt; Watching <span class="k">for</span> changes in /Users/spf13/Code/hugo/docs/content
-</span></span><span class="line"><span class="ln">7</span><span class="cl">    &gt; Press ctrl+c to stop
-</span></span></code></pre></div><p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">    &gt; Change detected, rebuilding site
-</span></span><span class="line"><span class="ln">2</span><span class="cl">
-</span></span><span class="line"><span class="ln">3</span><span class="cl">    &gt; <span class="m">29</span> pages created
-</span></span><span class="line"><span class="ln">4</span><span class="cl">    &gt; <span class="m">0</span> tags index created
-</span></span><span class="line"><span class="ln">5</span><span class="cl">    &gt; in <span class="m">26</span> ms
-</span></span></code></pre></div><p>Refresh the browser and observe that the typo is now fixed.</p>
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+<h2 id="step-3-have-fun">Step 3. Have fun</h2>
 <p>The best way to learn something is to play with it.</p>
 
         </div>
