@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Love Story</title>
+    <link>https://jinxian.art/pages/</link>
+    <description>Recent content in Pages on Love Story</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jinxian.art/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Love Story</title>
+      <link>https://jinxian.art/about/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://jinxian.art/about/</guid>
+      <description>&lt;p&gt;明明如月。繞樹三匝。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
