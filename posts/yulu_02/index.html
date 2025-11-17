@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"  data-mode="lit">
   <head>
-  <title>Creating a new theme | Love Story</title>
+  <title>賢妹語錄 | Love Story</title>
   <meta charset='utf-8'>
   <meta name="viewport" content ="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,29 +12,30 @@
 <meta name="keywords" content="Love Story">
 <meta property="og:locale" content='en_US'>
 <meta property="og:type" content="article">
-<meta property="og:title" content="Creating a New Theme">
-<meta property="og:description" content="Introduction
-This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are">
-<meta property="og:url" content="https://jinxian.art/posts/creating-a-new-theme/">
-<meta property="og:image" content="https://jinxian.art/images/images/jx_008.jpg"><meta property="article:published_time" content="2025-17-11" />
+<meta property="og:title" content="賢妹語錄">
+<meta property="og:description" content="Hugo uses the excellent Go html/template library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In">
+<meta property="og:url" content="https://jinxian.art/posts/yulu_02/">
+<meta property="og:image" content="https://jinxian.art/images/images/jx_005.jpg"><meta property="article:published_time" content="2025-16-11" />
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "BlogPosting",
-      "mainEntityOfPage":"https:\/\/jinxian.art\/posts\/creating-a-new-theme\/",
+      "mainEntityOfPage":"https:\/\/jinxian.art\/posts\/yulu_02\/",
       "name": "Love Story",
-      "headline": "Creating a New Theme",
-      "description": "\u003ch2 id=\u0022introduction\u0022\u003eIntroduction\u003c\/h2\u003e\n\u003cp\u003eThis tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are\u003c\/p\u003e",
-      "url": "https:\/\/jinxian.art\/posts\/creating-a-new-theme\/",
-      "datePublished": "2025-17-11",
-      "dateModified": "2025-17-11",
+      "headline": "賢妹語錄",
+      "description": "\u003cp\u003eHugo uses the excellent \u003ca href=\u0022https:\/\/golang.org\/\u0022\u003eGo\u003c\/a\u003e \u003ca href=\u0022https:\/\/golang.org\/pkg\/html\/template\/\u0022\u003ehtml\/template\u003c\/a\u003e library for\nits template engine. It is an extremely lightweight engine that provides a very\nsmall amount of logic. In\u003c\/p\u003e",
+      "url": "https:\/\/jinxian.art\/posts\/yulu_02\/",
+      "datePublished": "2025-16-11",
+      "dateModified": "2025-16-11",
       "author": {
         "@type": "Person",
-        "name": "Duōyú Rén"
+        "name": ""
       },
       "image":{
         "@type":"ImageObject",
-        "url": "https:\/\/jinxian.art\/images\/images\/jx_008.jpg"
+        "url": "https:\/\/jinxian.art\/images\/images\/jx_005.jpg"
       },
       "publisher": {
         "@type": "Organization",
@@ -48,11 +49,12 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
   </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="">
-  <meta name="twitter:title" content="Creating a New Theme">
-  <meta name="twitter:description" content="Introduction
-This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are">
-  <meta name="twitter:image" content="https://jinxian.art/images/images/jx_008.jpg">
-<link rel="canonical" href="https://jinxian.art/posts/creating-a-new-theme/">
+  <meta name="twitter:title" content="賢妹語錄">
+  <meta name="twitter:description" content="Hugo uses the excellent Go html/template library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In">
+  <meta name="twitter:image" content="https://jinxian.art/images/images/jx_005.jpg">
+<link rel="canonical" href="https://jinxian.art/posts/yulu_02/">
 
 <link rel="apple-touch-icon" sizes="180x180" href='https://jinxian.art/images/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://jinxian.art/images/icons/favicon-32x32.png'>
@@ -89,18 +91,31 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
     <main>
       
   <div class="wrap mt post">
-    <div><p class=post_date>17. November 2025</p>
-      <h1 class="post_title">Creating a New Theme</h1>
+    <div><p class=post_date>16. November 2025</p>
+      <h1 class="post_title">賢妹語錄</h1>
       <div class="post_body">
         <div class="post_inner">
         
         
-          <img src="https://jinxian.art/images/jx_008.jpg" alt="/images/jx_008.jpg" class="post_thumbnail">
+          <img src="https://jinxian.art/images/jx_005.jpg" alt="/images/jx_005.jpg" class="post_thumbnail">
         
-          <h2 id="introduction">Introduction</h2>
-<p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
-<h3 id="dont-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
-<p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
+          <p>Hugo uses the excellent <a href="https://golang.org/">Go</a> <a href="https://golang.org/pkg/html/template/">html/template</a> library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience that it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks you will find a lot of
+similarities in Go templates.</p>
+<p>This document is a brief primer on using Go templates. The <a href="https://golang.org/pkg/html/template/">Go docs</a>
+provide more details.</p>
+<h2 id="introduction-to-go-templates">Introduction to Go Templates</h2>
+<p>Go templates provide an extremely simple template language. It adheres to the
+belief that only the most basic of logic belongs in the template or view layer.
+One consequence of this simplicity is that Go templates parse very quickly.</p>
+<p>A unique characteristic of Go templates is they are content aware. Variables and
+content will be sanitized depending on the context of where they are used. More
+details can be found in the <a href="https://golang.org/pkg/html/template/">Go docs</a>.</p>
+<h2 id="basic-syntax">Basic Syntax</h2>
+<p>TEST</p>
 
         </div>
         <div class="post_extra mb-2">

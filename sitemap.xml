@@ -2,14 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jinxian.art/posts/creating-a-new-theme/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://jinxian.art/posts/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinxian.art/posts/love_story/</loc>
-    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <loc>https://jinxian.art/posts/yulu_01/</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jinxian.art/categories/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
@@ -38,10 +35,13 @@
     <loc>https://jinxian.art/tags/themes/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jinxian.art/posts/hugoisforlovers/</loc>
-    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+    <loc>https://jinxian.art/posts/yulu_02/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jinxian.art/tags/hugo/</loc>
+    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jinxian.art/posts/yulu_03/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jinxian.art/</loc>
