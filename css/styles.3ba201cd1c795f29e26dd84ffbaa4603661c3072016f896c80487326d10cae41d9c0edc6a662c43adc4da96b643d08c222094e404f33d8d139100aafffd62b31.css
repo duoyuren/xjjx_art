@@ -4,10 +4,11 @@
 @import url("https://fonts.loli.net/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
 @import url("https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css");
 @import url("https://chinese-fonts-cdn.deno.dev/packages/moon-stars-kai/dist/MoonStarsKaiTHW-Bold/result.css");
-@import url("https://chinese-fonts-cdn.deno.dev/packages/yozai/dist/Yozai-Medium/result.css");
-@import url("https://chinese-fonts-cdn.deno.dev/packages/stdgt/dist/%E4%B8%8A%E5%9B%BE%E4%B8%9C%E8%A7%82%E4%BD%93-%E7%B2%97%E4%BD%93/result.css");
+@import url("https://chinese-fonts-cdn.deno.dev/packages/yozai/dist/Yozai-Regular/result.css");
+@import url("https://chinese-fonts-cdn.deno.dev/packages/yozai/dist/Yozai-Bold/result.css");
 @import url("https://chinese-fonts-cdn.deno.dev/packages/hcqyt/dist/ChillRoundFRegular/result.css");
 @import url("https://chinese-fonts-cdn.deno.dev/packages/zqfs/dist/ZhuqueFangsong-Regular/result.css");
+@import url("https://chinese-fonts-cdn.deno.dev/packages/yidianyan/dist/yidianyan/result.css");
 html {
   --color-mode: "lit";
   --light: #fff;
@@ -18,7 +19,7 @@ html {
   --bg: var(--light);
   --bg-dark: #000;
   --text: var(--dark);
-  --font: "chdot", "Yozai Medium", "KingHwa_OldSong", "Noto Sans", "Noto Sans KR", "Noto Sans HK", "Noto Sans SC", sans-serif;
+  --font: "chdot", "Yozai", "KingHwa_OldSong", "Noto Sans", "Noto Sans KR", "Noto Sans HK", "Noto Sans SC", sans-serif;
   --theme: rgb(52,199,89);
   --ease: cubic-bezier(.19,1,.22,1);
 }
@@ -65,28 +66,17 @@ html[data-mode="dim"] .color_choice::after {
 /* */
 /* 全站使用「中文網字計劃」流量的京華老宋体v2_002 KingHwa_OldSong */
 /* 使用 Moon Stars Kai T HW 作爲默認粗體 */
-@font-face {
-  font-family: 'Yozai Medium';
+strong {
+  font-family: inherit;
+  color: inherit;
+  -webkit-text-stroke: 0.45px currentColor;
+}
+
+em {
+  font-family: inherit;
+  color: inherit;
   font-style: italic;
-  font-weight: 400;
-  color: #424949;
-  src: local("Zhuque Fangsong (technical preview)"), local("Zhuque Fangsong (technical preview)");
-}
-
-@font-face {
-  font-family: 'Yozai Medium';
-  font-style: normal;
-  color: #424949;
-  font-weight: 700;
-  src: local("STDongGuanTi Bld"), local("STDongGuanTi Bld");
-}
-
-/* 使用 Moon Stars Kai T HW 作爲 KingHwa_OldSong 的默認粗體。在 mian.css 中@import url('https://chinese-fonts-cdn.deno.dev/packages/moon-stars-kai/dist/MoonStarsKaiTHW-Bold/result.css'); */
-@font-face {
-  font-family: 'KingHwa_OldSong';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Moon Stars Kai T HW"), local("Moon Stars Kai T HW");
+  -webkit-text-stroke: 0.35px currentColor;
 }
 
 @font-face {
@@ -253,10 +243,10 @@ a {
 
 blockquote {
   opacity: 0.8;
-  padding: 1rem;
+  padding: 0.05rem 0.35rem 0.05rem 0.55rem;
   position: relative;
   quotes: "“" "”" "‘" "’";
-  margin: 0.75rem 0;
+  margin: 0.55rem 0;
   display: flex;
   flex-flow: row wrap;
   background-repeat: no-repeat;
@@ -289,26 +279,30 @@ code {
   white-space: preserve nowrap;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
   font-family: inherit;
+  font-weight: 700;
   text-transform: capitalize;
-  font-weight: 400;
-  padding: 0.33rem 0;
-  margin: 1rem 0;
+  padding-top: 0em;
+  padding-bottom: 0em;
   color: inherit;
 }
 
 h1 {
+  font-family: inherit;
+  font-weight: 700;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  text-transform: capitalize;
   font-size: 200%;
-  font-weight: 400;
 }
 
 h2 {
-  font-size: 175%;
+  font-size: 150%;
 }
 
 h3 {
-  font-size: 150%;
+  font-size: 125%;
 }
 
 h4 {
@@ -316,6 +310,7 @@ h4 {
 }
 
 h5 {
+  font-weight: 700;
   font-size: 120%;
 }
 
@@ -859,9 +854,12 @@ aside h3 {
 }
 
 .post h2, .post h3, .post h4 {
-  margin: 0.5rem auto;
+  font-family: inherit;
+  font-weight: 700;
   text-align: left;
-  padding: 5px 0 0 0;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  font-size: 135%;
 }
 
 .post p {
