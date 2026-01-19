@@ -1,0 +1,54 @@
+
+/* 自定義頁面字體  (要在 header.html 中添加 href="{{ "./css/fonts.css" | relURL }}" 以引用本 css 設置的內容) */
+
+/* Noto Sans HK SC KR: fonts.loli.net 和 fonts.geekzu.org 加载思源黑体均能在国内达到与 Google Fonts 相近的速度 */
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('https://lib.baomitu.com/fonts/noto-sans/noto-sans-regular.woff2') format('woff2'),
+       url('https://lib.baomitu.com/fonts/noto-sans/noto-sans-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url('https://lib.baomitu.com/fonts/stix-two-text/stix-two-text-600italic.woff2') format('woff2'),
+  url('https://lib.baomitu.com/fonts/stix-two-text/stix-two-text-600italic.woff') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('https://lib.baomitu.com/fonts/noto-sans/noto-sans-700.woff2') format('woff2'),
+       url('https://lib.baomitu.com/fonts/noto-sans/noto-sans-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url('https://lib.baomitu.com/fonts/stix-two-text/stix-two-text-700italic.woff2') format('woff2'),
+  url('https://lib.baomitu.com/fonts/stix-two-text/stix-two-text-700italic.woff') format('woff2');
+}
+
+
+@font-face {/* 、，。：；？！… ……《》取自GenWanMinTW-SemiBold */
+    font-family: 'chdot';
+    src: url(data:application/font-woff2;charset=utf-8;base64,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) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {/* 、，。：；？！… ……《》取自GenWanMinTW-SemiBold */
+    font-family: 'chdot';
+    src: url(data:application/font-woff2;charset=utf-8;base64,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) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
